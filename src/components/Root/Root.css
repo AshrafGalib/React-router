@@ -1,0 +1,8 @@
+body a{
+    margin-right:5px ;
+}
+
+.Flex {
+    display: flex;
+    gap: 50px;
+}
