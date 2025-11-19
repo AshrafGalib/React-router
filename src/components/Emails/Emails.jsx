@@ -1,8 +1,8 @@
-import React, { use } from 'react';
+//import React, { use } from 'react';
 
-const Emails = ({EmailsPromise}) => {
-    const emails =use(EmailsPromise)
-    console.log(emails)
+const Emails = () => {
+    //const emails =use(EmailsPromise)
+    //console.log(emails)
     return (
         <div>
             <h3>Emails.</h3>

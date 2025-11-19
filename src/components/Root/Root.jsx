@@ -13,7 +13,9 @@ const Root = () => {
                 <p>Side Nav -2</p>
                 <p>Side Nav -3</p>
             </aside>
-             <Outlet></Outlet>
+             <div>
+                <Outlet></Outlet>
+                </div>
            </div>
             <Footers></Footers>
         </div>
