@@ -9,6 +9,7 @@ import Blogs from './components/Blogs/Blogs.jsx'
 import Writers from './components/Writers/Writers.jsx'
 import Emails from './components/Emails/Emails.jsx'
 import WritersDetails from './components/WritersDetails/WritersDetails.jsx'
+import Address from './components/Address/Address.jsx'
 
 const EmailsPromise = fetch('https://jsonplaceholder.typicode.com/comments').then(res=>res.json())
 
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
       path : 'users/:usersId',
       loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
       Component : WritersDetails
+    },
+    {
+      path:'users/:usersId/address',
+      loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
+      Component :Address
     }
     ]
 }
