@@ -1,11 +1,10 @@
-import React from 'react';
+
 import './Writer.css'
 import { Link, useNavigate } from 'react-router';
 import Address from '../Address/Address';
 
-
-
 const Writer = ({writer}) => {
+
     const{id,name,username}=writer 
    //const{street,city,zipcode}  =writer.address
    //console.log(street,city,zipcode)

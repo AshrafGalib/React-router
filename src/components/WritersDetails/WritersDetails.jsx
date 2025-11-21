@@ -10,8 +10,8 @@ const WritersDetails = () => {
         <div>
             <h2>Writer Details here:</h2>
             
-            <Suspense fallback='Loading...'>
-<div className='style'>
+            <Suspense fallback={<span>Loading..</span>}>
+            <div className='style'>
             <h2>NAME : {WriterDetails.name}</h2>
             <h2>EMAIL : {WriterDetails.email}</h2>
             <h2>PHONE : {WriterDetails.phone}</h2>

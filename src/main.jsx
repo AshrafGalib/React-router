@@ -30,15 +30,19 @@ const router = createBrowserRouter([
     //Component: Emails
     },
     {
-      path : 'users/:usersId',
-      loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
+      path : 'users/:Id',
+      loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.Id}`),
       Component : WritersDetails
     },
     {
       path:'users/:usersId/address',
       loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
       Component :Address
-    }
+    },
+    {
+  path: '*',
+  element:<h2>Not Found!</h2>
+}
     ]
 }
 ])
